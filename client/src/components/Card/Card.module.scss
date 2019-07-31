@@ -1,0 +1,100 @@
+@import "../../assets/styles/smart-grid.scss";
+@import "../../assets/styles/_variables.scss";
+
+h5 {
+  font-family: $proxima-semi;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  font-family: "Roboto";
+  padding: 5px;
+
+  .img {
+    position: relative;
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+    p {
+      font-family: "Roboto";
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      opacity: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      opacity: 0;
+      transition: 0.5s all;
+    }
+
+    &:hover::after {
+      opacity: 0.6;
+    }
+    &:hover p {
+      opacity: 1;
+    }
+  }
+
+  .title {
+    font-family: $proxima-bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: rgb(63, 142, 245);
+
+      &:hover {
+        color: rgb(154, 196, 250);
+        transition: all 0.3s;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .technologies {
+    margin-top: 30px;
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        width: 50%;
+        margin-bottom: 15px;
+
+        i {
+          margin-right: 5px;
+          color: rgb(63, 142, 245);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
