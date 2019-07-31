@@ -30,7 +30,7 @@ export default class Navigation extends Component {
           className={this.state.mobile && styles.mobileActive}
           onClick={() => this.setState({ mobile: !this.state.mobile })}
         >
-          <span />
+          <span className={styles.span} />
         </div>
 
         <ul

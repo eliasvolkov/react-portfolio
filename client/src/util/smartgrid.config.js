@@ -29,6 +29,10 @@ const settings = {
     xxs: {
       width: "390px",
       fields: "10px"
+    },
+    xxxs: {
+      width: "330px",
+      fields: "10px"
     }
     /* 
         We can create any quantity of break points.
