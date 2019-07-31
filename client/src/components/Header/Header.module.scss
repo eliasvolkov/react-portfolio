@@ -1,0 +1,36 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/smart-grid.scss";
+
+.mainHeader {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  // background-color: rgb(51, 51, 51);
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    @include wrapper();
+    width: 100%;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .logo {
+        font-family: $proxima-reg;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin-right: auto;
+        strong {
+          font-family: $proxima-bold;
+        }
+      }
+    }
+  }
+}
