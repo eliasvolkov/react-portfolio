@@ -1,0 +1,41 @@
+@import "../../assets/styles/smart-grid.scss";
+@import "../../assets/styles/variables";
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $proxima-reg;
+  font-size: 18px;
+  margin-top: 150px;
+  transform: translateY(0);
+  @include size-xs(12);
+  @include size-xxs(12);
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    @include size-xs(3);
+    @include size-xxs(4);
+
+    @include xs-block {
+      padding: 0;
+      @include col();
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    i {
+      display: block;
+      font-size: 24px;
+
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
