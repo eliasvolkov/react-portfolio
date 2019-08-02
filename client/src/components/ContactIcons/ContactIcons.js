@@ -15,7 +15,10 @@ const ContactIcons = () => {
         <i className="fa fa-at" />
         <strong>Email</strong>
       </a>
-      <a href="">
+      <a
+        href="https://res.cloudinary.com/dksocxl5g/image/upload/v1564653263/cv_ejrmxu.pdf"
+        target="_blank"
+      >
         <i className="fa fa-newspaper-o" />
         <strong>Resume</strong>
       </a>
