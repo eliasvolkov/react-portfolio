@@ -1,0 +1,74 @@
+@import "smart-grid.scss";
+@import "_variables.scss";
+
+.container {
+  @include wrapper();
+  box-sizing: border-box;
+
+  .btn {
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Roboto";
+    border-radius: 10px;
+    color: rgb(63, 142, 245);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  @include sm-block {
+    justify-content: center;
+  }
+
+  .card {
+    @include size(5);
+    @include size-sm(10);
+    @include size-xs(12);
+
+    .title {
+      font-family: $proxima-bold;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .description {
+    @include size(5);
+    @include size-sm(10);
+    @include size-xs(12);
+    @include shift-left(1);
+    @include shift-sm-left(0);
+
+    .descr {
+      .topic {
+        font-size: 18px;
+        font-family: "Roboto";
+        margin-bottom: 50px;
+
+        p {
+          font-size: 16px;
+          color: #646464;
+          line-height: 24px;
+        }
+
+        .list {
+          display: flex;
+          flex-flow: column wrap;
+
+          .item {
+            width: 50%;
+            margin-bottom: 15px;
+
+            i {
+              margin-right: 5px;
+              color: rgb(63, 142, 245);
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
