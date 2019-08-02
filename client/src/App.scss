@@ -1,0 +1,46 @@
+@import "./assets/styles/smart-grid.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+
+@include reset();
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  color: rgb(34, 152, 220);
+  color: #a276db;
+}
+
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: url("./assets/fonts/ProximaNova-Black.eot") format("eot"),
+    url("./assets/fonts/ProximaNova-Black.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("/fonts/ProximaNova-Bold.eot") format("eot"),
+    url("./assets/fonts/ProximaNova-Bold.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaReg";
+  src: url("./assets/fonts/ProximaNova-Regular.eot") format("eot"),
+    url("./assets/fonts/ProximaNova-Regular.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaSem";
+  src: url("./assets/fonts/ProximaNova-Semibold.eot") format("eot"),
+    url("./assets/fonts/ProximaNova-Semibold.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
