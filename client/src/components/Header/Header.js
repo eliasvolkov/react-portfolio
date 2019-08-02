@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.scss";
 
@@ -11,9 +12,14 @@ export default class Header extends Component {
       >
         <div className={styles.container}>
           <div className={styles.row}>
-            <a className={styles.logo}>
-              ilia <strong>volkov</strong>
-            </a>
+            <div className={styles.logo}>
+              <Link to="/">
+                <a className={styles.logo}>
+                  ilia <strong>volkov</strong>
+                </a>
+              </Link>
+            </div>
+
             <Navigation />
           </div>
         </div>
