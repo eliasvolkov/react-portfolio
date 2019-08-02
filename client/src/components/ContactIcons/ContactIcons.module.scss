@@ -10,6 +10,9 @@
   transform: translateY(0);
   @include size-xs(12);
   @include size-xxs(12);
+  @include xxxs-block {
+    margin: 100px 0 50px 0;
+  }
 
   a {
     text-decoration: none;
