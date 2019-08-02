@@ -24,7 +24,11 @@ export default class Index extends Component {
                     "Express.js",
                     "Node.js",
                     "MongoDB",
-                    "Next.js"
+                    "Next.js",
+                    "Redux",
+                    "MOBX",
+                    "GraqhQL",
+                    "Apollo"
                   ]}
                   shuffle={false}
                   backDelay={1000}
