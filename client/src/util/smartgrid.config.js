@@ -24,7 +24,7 @@ const settings = {
     },
     xs: {
       width: "560px",
-      fields: "10px"
+      fields: "5px"
     },
     xxs: {
       width: "390px",
