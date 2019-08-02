@@ -7,20 +7,20 @@ export default class Navigation extends Component {
     mobile: false
   };
   render() {
-    const menuItems = ["About", "Portfolio", "CV"];
+    const menuItems = ["Home", "About", "Portfolio", "CV"];
     return (
       <nav>
-        <ul>
-          <li>
-            <NavLink to="/">
-              <a>Home</a>
-            </NavLink>
-          </li>
+        <ul className={styles.navList}>
           {menuItems.map((item, index) => {
             return (
-              <li key={index}>
-                <NavLink to={`/${item.toLocaleLowerCase()}`}>
-                  <a>{item}</a>
+              <li key={index} className={styles.navItem}>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className={styles.navLink}
+                  to={item === "Home" ? "/" : `/${item.toLocaleLowerCase()}`}
+                >
+                  {item}
                 </NavLink>
               </li>
             );
@@ -40,16 +40,16 @@ export default class Navigation extends Component {
               : styles.responseMenu
           }
         >
-          <li>
-            <NavLink to="/">
-              <a>Home</a>
-            </NavLink>
-          </li>
           {menuItems.map((item, index) => {
             return (
-              <li key={index}>
-                <NavLink to={`/${item.toLocaleLowerCase()}`}>
-                  <a>{item}</a>
+              <li key={index} className={styles.navItem}>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className={styles.navLink}
+                  to={item === "Home" ? "/" : `/${item.toLocaleLowerCase()}`}
+                >
+                  {item}
                 </NavLink>
               </li>
             );
