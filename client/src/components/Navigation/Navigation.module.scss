@@ -1,7 +1,7 @@
 @import "../../assets/styles/smart-grid.scss";
 @import "../../assets/styles/variables";
 
-ul {
+.navList {
   display: flex;
   flex-wrap: wrap;
 
@@ -9,11 +9,10 @@ ul {
     display: none;
   }
 
-  li {
+  .navItem {
     padding: 0 12.5px;
 
-    a {
-      color: #fff;
+    .navLink {
       text-decoration: none;
       font-family: $proxima-reg;
       font-size: 18px;
@@ -24,11 +23,11 @@ ul {
 
 .responseMenu {
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
   padding: 10px;
@@ -40,11 +39,18 @@ ul {
   z-index: -1;
   li {
     margin-bottom: 10px;
+
+    .navLink {
+      text-decoration: none;
+      font-family: $proxima-reg;
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
 
   &_active {
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
   }
 }
 
